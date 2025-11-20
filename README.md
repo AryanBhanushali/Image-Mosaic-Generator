@@ -1,14 +1,14 @@
 # Mosaic Generator (Modular Edition)
 
 ## Overview
-This project is a **modular image mosaic generator** built for CS coursework. It transforms input images into mosaics using adjustable grid sizes, tile sizes, and color quantization, and reports similarity metrics. The user interface is built with **Gradio**, and all core logic is split across individual modules.
+This project is a **modular image mosaic generator** built for CS coursework. It transforms input images into mosaics using adjustable grid sizes, tile sizes, and color quantization, and reports similarity metrics. The user interface is built using **Gradio**, and all core logic is split across individual modules.
 
 ## Features
-- Fast, vectorized pipeline for mosaic construction  
-- Interactive **Gradio** web interface  
-- Adjustable **grid size**, **tile size**, and **color quantization** (number of buckets)  
-- Reports **Mean Squared Error (MSE)** and **Structural Similarity Index (SSIM)**  
-- Extensible and clean **modular design**
+- Fast, vectorized pipeline for mosaic construction
+- Interactive **Gradio** web interface
+- Adjustable **grid size**, **tile size**, and **color quantization** (number of buckets)
+- Reports **Mean Squared Error (MSE)** and **Structural Similarity Index (SSIM)**
+- Extensible, clean **modular design**
 
 ## Project Structure
 lab5/
@@ -28,49 +28,38 @@ Copy code
 
 ## Installation
 
-1. **Clone** or unzip the project folder locally.  
-2. Install dependencies:
+1. **Clone** or download the project.
+2. Install required dependencies:
 
 ```bash
 pip install numpy pillow gradio scikit-image
+(Optional)
 
-# Optional:
+bash
+Copy code
 pip install -r requirements.txt
 Usage
-Place your images in the folder specified by DATASET_PATH in config.py
+Place your images in the folder specified by DATASET_PATH inside config.py.
+
 Default:
 
 bash
 Copy code
 C:/Users/atoma/Downloads/lab1/archive/data
-Run the app:
+Run the application:
 
 bash
 Copy code
 python app.py
-Open the Gradio interface in your browser.
-Upload an image, adjust mosaic settings, and view the results and metrics.
+A Gradio interface will open in your browser.
+Upload/select an image, adjust mosaic settings, and view results + metrics.
 
 Modularity Details
-All core logic (image preprocessing, tiling, mosaic building, metrics) is located inside the mosaic_generator/ module.
+All business logic (preprocessing, tiling, mosaic generation, metrics) is inside the mosaic_generator/ directory.
 
-app.py contains only the UI and the main pipeline, with no helper functions defined directly.
+app.py only contains the UI and pipeline orchestration — no helper logic is duplicated.
 
-Metrics use wrapper functions (compute_mse, compute_ssim) for readability and consistent usage across the project.
+Metric functions (compute_mse, compute_ssim) are wrapped for clarity and easy reuse.
 
 Credits
-Built by Aryan Bhanushali, Northeastern University — designed for CS 5130 requirements.
-
-diff
-Copy code
-
-If you want, I can add:
-- a project banner,
-- example output images,
-- badges (Python version, license, etc.),
-- or a "How It Works" section.
-
-
-
-
-
+Built by Aryan Bhanushali, Northeastern University — for CS 5130 coursework.
