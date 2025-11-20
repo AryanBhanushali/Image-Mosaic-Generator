@@ -1,4 +1,3 @@
-BEGIN README.md
 # Mosaic Generator (Modular Edition)
 
 ## Overview
@@ -25,7 +24,6 @@ metrics.py # Similarity metrics (MSE, SSIM)
 utils.py # Misc utilities (example image loader)
 
 shell
-Copy code
 
 ## Installation
 
@@ -34,7 +32,6 @@ pip install numpy pillow gradio scikit-image
 pip install -r requirements.txt # optional
 
 bash
-Copy code
 
 ## Usage
 
@@ -43,10 +40,12 @@ Default path:
 `C:/Users/atoma/Downloads/lab1/archive/data`
 
 ### Run the application:
+
+bash
+
 python app.py
 
 pgsql
-Copy code
 
 Open the Gradio interface in your browser to upload an image, tweak mosaic parameters, and view results.
 
