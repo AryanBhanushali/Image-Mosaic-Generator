@@ -11,7 +11,7 @@ This project is a modular image mosaic generator built for CS coursework. It tra
 - Clean, extensible modular architecture
 
 ## Project Structure
-lab5/
+`lab5/
 │ app.py # Main Gradio application (entry point)
 │ README.md # Project documentation
 └─ mosaic_generator/
@@ -21,15 +21,15 @@ image_processor.py # Image loading & preprocessing
 mosaic_builder.py # Mosaic construction
 tile_manager.py # Tile generation
 metrics.py # Similarity metrics (MSE, SSIM)
-utils.py # Misc utilities (example image loader)
+utils.py # Misc utilities (example image loader)`
 
 shell
 
 ## Installation
 
 ### Install dependencies:
-pip install numpy pillow gradio scikit-image
-pip install -r requirements.txt # optional
+`pip install numpy pillow gradio scikit-image`
+`pip install -r requirements.txt` # optional
 
 bash
 
@@ -40,12 +40,7 @@ Default path:
 `C:/Users/atoma/Downloads/lab1/archive/data`
 
 ### Run the application:
-
-bash
-
-python app.py
-
-pgsql
+`python app.py`
 
 Open the Gradio interface in your browser to upload an image, tweak mosaic parameters, and view results.
 
@@ -56,4 +51,3 @@ Open the Gradio interface in your browser to upload an image, tweak mosaic param
 
 ## Credits
 Built by Aryan Bhanushali, Northeastern University — CS 5130 coursework.
-END README.md
