@@ -44,8 +44,6 @@ utils.py # Misc utilities (example image loader)
 ## Usage
 
 Place your images in the folder specified by `DATASET_PATH` in `config.py`.  
-Default path:  
-`C:/Users/atoma/Downloads/lab1/archive/data`
 
 ### Run the application:
 `python app.py`
